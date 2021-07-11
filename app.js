@@ -23,12 +23,64 @@ console.log(PI);
 // operadores
 let numberOne = 60;
 let numberTwo = 70;
-result = numberOne + numberTwo;
-console.log(result)
+let resultSum = numberOne + numberTwo;
+console.log(resultSum)
 
 
 let passwordDB = 'pepe123';
 let input = "pepe123";
-let result = input == passwordDB
+let result = input == passwordDB;
 
-console.log(result)
+console.log(result);
+
+if (result == true){
+    console.log("Correct login");
+} else {
+    console.log("incorrect login");
+}
+
+let score = 70;
+if (score > 30){
+    console.log("You need to practice more");
+}else if (score > 15){
+    console.log("You are getting better");
+}
+else {
+    console.log("You need to follow this tutorial");
+}
+
+let typeCard = "Debid Card";
+
+switch(typeCard){
+    case 'Debid Card':
+        console.log('This is a debid card');
+        break;
+    case 'Credit Card':
+        console.log('This is a credit card');
+        break;
+    default:
+        console.log("No card")
+
+}
+
+let count = 5;
+while(count >= 0 ){
+    console.log(count);
+    count--;
+}
+
+
+
+let names = ['Joe', 'ryan','Martha'];
+for(let i = 0; i < names.length; i+=1) {
+    console.log(names[i]);
+}
+
+
+
+
+function greeting(name){
+    console.log("Hello " + name);
+}
+
+greeting(names[2]);
